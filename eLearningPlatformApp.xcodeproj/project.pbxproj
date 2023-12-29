@@ -10,9 +10,9 @@
 		7782691D2B36188500F9D20D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7782691C2B36188500F9D20D /* AppDelegate.swift */; };
 		7782691F2B36188500F9D20D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7782691E2B36188500F9D20D /* SceneDelegate.swift */; };
 		778269212B36188500F9D20D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778269202B36188500F9D20D /* ViewController.swift */; };
-		778269242B36188500F9D20D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778269222B36188500F9D20D /* Main.storyboard */; };
 		778269262B36188700F9D20D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 778269252B36188700F9D20D /* Assets.xcassets */; };
 		778269292B36188700F9D20D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778269272B36188700F9D20D /* LaunchScreen.storyboard */; };
+		778269322B361D3600F9D20D /* Turbo in Frameworks */ = {isa = PBXBuildFile; productRef = 778269312B361D3600F9D20D /* Turbo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		7782691C2B36188500F9D20D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7782691E2B36188500F9D20D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		778269202B36188500F9D20D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		778269232B36188500F9D20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		778269252B36188700F9D20D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		778269282B36188700F9D20D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7782692A2B36188700F9D20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				778269322B361D3600F9D20D /* Turbo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				7782691C2B36188500F9D20D /* AppDelegate.swift */,
 				7782691E2B36188500F9D20D /* SceneDelegate.swift */,
 				778269202B36188500F9D20D /* ViewController.swift */,
-				778269222B36188500F9D20D /* Main.storyboard */,
 				778269252B36188700F9D20D /* Assets.xcassets */,
 				778269272B36188700F9D20D /* LaunchScreen.storyboard */,
 				7782692A2B36188700F9D20D /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = eLearningPlatformApp;
+			packageProductDependencies = (
+				778269312B361D3600F9D20D /* Turbo */,
+			);
 			productName = eLearningPlatformApp;
 			productReference = 778269192B36188500F9D20D /* eLearningPlatformApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 778269102B36188500F9D20D;
+			packageReferences = (
+				778269302B361D3600F9D20D /* XCRemoteSwiftPackageReference "turbo-ios" */,
+			);
 			productRefGroup = 7782691A2B36188500F9D20D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +132,6 @@
 			files = (
 				778269292B36188700F9D20D /* LaunchScreen.storyboard in Resources */,
 				778269262B36188700F9D20D /* Assets.xcassets in Resources */,
-				778269242B36188500F9D20D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		778269222B36188500F9D20D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				778269232B36188500F9D20D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		778269272B36188700F9D20D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +292,6 @@
 				INFOPLIST_FILE = eLearningPlatformApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +318,6 @@
 				INFOPLIST_FILE = eLearningPlatformApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		778269302B361D3600F9D20D /* XCRemoteSwiftPackageReference "turbo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/turbo-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		778269312B361D3600F9D20D /* Turbo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 778269302B361D3600F9D20D /* XCRemoteSwiftPackageReference "turbo-ios" */;
+			productName = Turbo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 778269112B36188500F9D20D /* Project object */;
 }
